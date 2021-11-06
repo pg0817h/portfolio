@@ -7,4 +7,28 @@ body.loading {
     height: 100vh;
    
 }
+ul{
+    list-style: none;
+    color: black;
+   
+}
+
+ul > li {
+   
+    align-items: center;
+    max-width: 300px;
+  
+}
+li svg{
+    margin-right: 10px;
+  
+}
+li span{
+    display:flex;
+    flex-wrap: wrap;
+}
+.submenu {
+    margin-top: 2%;
+    margin-left: 9%;
+}
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
