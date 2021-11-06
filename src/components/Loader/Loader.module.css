@@ -1,0 +1,23 @@
+.main{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #18315B;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.loader_inner{
+    background-color: black;
+    position: absolute;
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

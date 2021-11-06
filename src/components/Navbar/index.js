@@ -1,12 +1,13 @@
 import React, {useState,useEffect}from 'react';
 import {FaBars} from 'react-icons/fa';
-import {animateScroll as scroll} from 'react-scroll';
+
+import {animateScroll as scrollTop} from 'react-scroll';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElement';
 
-const Navbar = ({toggle,logoLink,logoContent,linktoOne,linktoTwo,linktoThree,contentOne,contentTwo,contentThree, signoutLink}) => {
+const Navbar = ({toggle,logoLink,logoContent,linktoOne,linktoTwo,linktoThree,contentOne,contentTwo,contentThree, signoutLink,scroll}) => {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
-        if(window.scrollY >= 80){
+        if(window.scrollY >= 800){
             setScrollNav(true);
         } else {
             setScrollNav(false);
@@ -22,9 +23,9 @@ const Navbar = ({toggle,logoLink,logoContent,linktoOne,linktoTwo,linktoThree,con
     }, [])
 
     const toggleHome = () => {
-        scroll.scrollToTop();
+        scrollTop.scrollToTop();
     }
-    console.log("test")
+   
     return (
         
           <Nav scrollNav={scrollNav}>

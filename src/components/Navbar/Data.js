@@ -1,10 +1,10 @@
 export const homeBar = {
     logoLink: "/",
     logoContent: "Abby Chun",
-    linktoOne: "service",
-    linktoTwo: "about",
-    linktoThree: "discover",
-    contentOne: "Service",
-    contentTwo: "About",
-    contentThree: "Discover"
+    linktoOne: "about",
+    linktoTwo: "project",
+    linktoThree: "contact",
+    contentOne: "About",
+    contentTwo: "Project",
+    contentThree: "Contact"
 }
