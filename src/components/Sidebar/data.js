@@ -40,5 +40,18 @@ export const menu = [
             }
         ],
         title: "Programming Language"
+    },
+    {
+        children: [
+            {
+                children:[],
+                title: 'Korean'
+            },
+            {
+                children:[],
+                title: 'English'
+            }
+        ],
+        title: "Language"
     }
 ]

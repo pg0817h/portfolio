@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { FiChevronDown } from 'react-icons/fi';
 import {motion, AnimatePresence} from 'framer-motion';
-
+import styled from './sidebar.module.css';
 const Sidebar = ({node}) => {
     const variants = {
         open: { opacity: 1, height: "auto" },
@@ -16,15 +16,18 @@ const Sidebar = ({node}) => {
     return (
         <>
             <li>
-                <motion.div initial ={false} onClick={()=> setIsOpen(!isOpen)}>
-                    <FiChevronDown />
-                     {node.title}
+                <motion.div 
+                    className={styled.container}
+                    initial ={false} 
+                    onClick={()=> setIsOpen(!isOpen)}>
+                    <FiChevronDown className={styled.icon}/>
+                     <span className={styled.title}>{node.title}</span>
                 </motion.div>
                
                 <AnimatePresence initial={false}>
                     {node.children.length > 0 && isOpen && (
                         <motion.ul
-                            className="submenu"
+                            className={styled.submenu}
                             initial="collapsed"
                             animate="open"
                             exit="collapsed"

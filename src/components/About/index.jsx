@@ -1,11 +1,11 @@
 import React from 'react'
 import img from '../../static/abbyChun.jpg';
-import {motion,useCycle}  from 'framer-motion';
+import {motion}  from 'framer-motion';
 import {InfoContainer,RssBlock,CnnContents,Sliding1,Sliding2,Contentdata1,InfoWrapper,InfoRow,Column1,Column2,TextWrapper,TopLine,Heading,Subtitle,BtnWrap,ImgWrap,Img} from './AboutElement';
 import Sidebar from '../Sidebar';
 import {menu} from "../Sidebar/data";
 const About = ({scrollWindow}) => {
-   const [x,setX] = useCycle(-50,-20,30,30)
+ 
     return (
         <>
           <InfoContainer scrollWindow={scrollWindow} id="about">

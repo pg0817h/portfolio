@@ -1,34 +1,48 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 body.loading {
     /* overflow: hidden; */
     height: 100vh;
    
 }
-ul{
-    list-style: none;
-    color: black;
-   
+.Heroimg{
+    position: absolute;
+  
+    z-index: 5;
+    width: 35em;
+    display: none;
+    max-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    vertical-align: middle;
+;
+    
 }
+@media screen and (max-width: 480px){
+   .Heroimg{
+       
+    position: absolute;
+    z-index: 5;
+    width: 35em;
+    display: inline-block;
+    max-width: 100%;
+    object-fit: contain;
+   
+   }
 
-ul > li {
+}
+@media screen and (max-width: 768px){
+
+    .Heroimg{
+       width:100%;
+        position: relative;
+        top: -4em;
+      
+        display: inline-block;
+    }
    
-    align-items: center;
-    max-width: 300px;
-  
-}
-li svg{
-    margin-right: 10px;
-  
-}
-li span{
-    display:flex;
-    flex-wrap: wrap;
-}
-.submenu {
-    margin-top: 2%;
-    margin-left: 9%;
-}
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Patua+One&display=swap');

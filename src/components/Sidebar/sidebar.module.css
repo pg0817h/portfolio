@@ -1,0 +1,30 @@
+ul{
+    list-style: none;
+    color: black;
+   
+}
+.container{
+    margin-bottom: 6%;
+    display: flex;
+}
+.title{
+    font-size: 1.2rem;
+
+}
+ul > li {
+   
+    align-items: center;
+    max-width: 300px;
+  
+}
+.icon{
+    margin-right: 10px;
+    flex: 1 10 auto;
+  
+}
+
+.submenu {
+    margin-bottom: 3%;
+    margin-left: 9%;
+    margin-bottom: 2%;
+}

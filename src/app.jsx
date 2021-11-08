@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import Homepage from './pages/home';
+import Homepage from './pages/home.jsx';
 import {useState,useEffect} from 'react';
 import Loader from './components/Loader/Loader';
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
